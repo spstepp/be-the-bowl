@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Be The Bowl — You choose the next strike</title>
+  <meta name="description" content="You are the bowl. Thought is the striker. A short teaching on thought, worth, and the sentence you live from. Adult practice and Little Bowl for children." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero wrap">
+    <p class="eyebrow">Be The Bowl™</p>
+    <div class="rule" aria-hidden="true"><span class="star">✦</span></div>
+    <img class="poster" src="poster.jpg" width="320" height="400" alt="Be The Bowl — singing bowl and striker on a dark field" />
+    <h1>You are the bowl. Thought is the striker. You choose the next strike.</h1>
+    <p class="deck">The room does not retune the metal. An unexamined thought is still a strike. Worth is not a review of the last note.</p>
+    <div class="actions">
+      <a class="btn" href="#short-teaching">Read the short teaching.</a>
+      <a class="btn secondary" href="#practice">Receive the one-page practice by email.</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap" id="parts" aria-labelledby="parts-title">
+      <div class="rule" aria-hidden="true"><span class="star">✦</span></div>
+      <h2 id="parts-title">The three parts</h2>
+      <p class="fine">Keep these separate. Confusion begins when they are treated as one thing.</p>
+      <div class="parts">
+        <div class="part">
+          <h3>The bowl</h3>
+          <p>The bowl is you. Form, capacity, worth. A poor note does not crack it.</p>
+        </div>
+        <div class="part">
+          <h3>The striker</h3>
+          <p>The striker is thought. The sentence you allow to land. Neglect is a way of choosing.</p>
+        </div>
+        <div class="part">
+          <h3>The tone</h3>
+          <p>The tone is what follows: feeling, then conduct, then the effect in the room. Consequence, not identity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="lines" aria-labelledby="lines-title">
+      <div class="rule" aria-hidden="true"><span class="star">✦</span></div>
+      <h2 id="lines-title">Two lines</h2>
+      <div class="lines">
+        <div>
+          <h3>Adults — Be The Bowl</h3>
+          <p>A practice for people who already take thought seriously. Catch the strike before it becomes the day. Begin with The Short Teaching.</p>
+        </div>
+        <div>
+          <h3>Children — Little Bowl by Be The Bowl</h3>
+          <p>For ages 6 to 11, sold to parents and educators. A child learns to tell a thought from a fact, and to remember they are still the bowl. We do not teach children that they attracted the afternoon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="short-teaching" aria-labelledby="st-title">
+      <div class="rule" aria-hidden="true"><span class="star">✦</span></div>
+      <h2 id="st-title">The Short Teaching</h2>
+      <p class="fine">The primary offer is The Short Teaching. The paid link is not live on this holding page yet. When it is listed, this button will go there.</p>
+      <p><span class="btn" aria-disabled="true" style="opacity:0.55;cursor:default;">Read the short teaching. — soon</span></p>
+    </section>
+
+    <section class="wrap" id="practice" aria-labelledby="practice-title">
+      <div class="rule" aria-hidden="true"><span class="star">✦</span></div>
+      <div class="capture">
+        <h2 id="practice-title">One page. One practice.</h2>
+        <p class="support">The day’s strike, written down. The three questions. A replacement sentence if the first cannot stand.</p>
+        <form id="practice-form" action="#" method="post" novalidate>
+          <label class="fine" for="email" style="position:absolute;left:-9999px;">Your email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="Your email" />
+          <button class="btn" type="submit">Send the practice</button>
+        </form>
+        <p id="form-status" class="note" hidden></p>
+        <p class="fine">No daily barrage. You may leave at any time. A Sparta Labs brand.</p>
+        <p class="note">Email delivery is not wired on this holding page yet. The practice text is locked; the send path waits on Steven’s mail tool.</p>
+      </div>
+    </section>
+
+    <section class="wrap claims" aria-labelledby="claims-title">
+      <h2 id="claims-title">What we will not claim</h2>
+      <p>Thought influences the quality of the person who meets the day. It does not confer command over every event. This is not medicine. A physical singing bowl is optional and not required.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Be The Bowl™ · Choose Your Vibration™ · Little Bowl by Be The Bowl</p>
+      <p>BeTheBowl.com · Sparta Labs · © 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('practice-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var status = document.getElementById('form-status');
+      status.hidden = false;
+      status.textContent = 'Email delivery is not connected yet. Nothing was sent.';
+    });
+  </script>
+</body>
+</html>
