@@ -15,8 +15,7 @@
     <h1>You are the bowl. Thought is the striker. You choose the next strike.</h1>
     <p class="deck">The room does not retune the metal. An unexamined thought is still a strike. Worth is not a review of the last note.</p>
     <div class="actions">
-      <a class="btn" href="#short-teaching">Read the short teaching.</a>
-      <a class="btn secondary" href="#practice">Receive the one-page practice by email.</a>
+      <a class="btn secondary" href="#practice">One page. One practice.</a>
     </div>
   </header>
 
@@ -59,8 +58,7 @@
     <section class="wrap" id="short-teaching" aria-labelledby="st-title">
       <div class="rule" aria-hidden="true"><span class="star">✦</span></div>
       <h2 id="st-title">The Short Teaching</h2>
-      <p class="fine">The primary offer is The Short Teaching. The paid link is not live on this holding page yet. When it is listed, this button will go there.</p>
-      <p><span class="btn" aria-disabled="true" style="opacity:0.55;cursor:default;">Read the short teaching. — soon</span></p>
+      <p class="fine">The primary offer for adults. Coming soon.</p>
     </section>
 
     <section class="wrap" id="practice" aria-labelledby="practice-title">
@@ -68,14 +66,7 @@
       <div class="capture">
         <h2 id="practice-title">One page. One practice.</h2>
         <p class="support">The day’s strike, written down. The three questions. A replacement sentence if the first cannot stand.</p>
-        <form id="practice-form" action="#" method="post" novalidate>
-          <label class="fine" for="email" style="position:absolute;left:-9999px;">Your email</label>
-          <input id="email" name="email" type="email" autocomplete="email" required placeholder="Your email" />
-          <button class="btn" type="submit">Send the practice</button>
-        </form>
-        <p id="form-status" class="note" hidden></p>
-        <p class="fine">No daily barrage. You may leave at any time. A Sparta Labs brand.</p>
-        <p class="note">Email delivery is not wired on this holding page yet. The practice text is locked; the send path waits on Steven’s mail tool.</p>
+        <p class="fine">Email signup for the practice is coming soon.</p>
       </div>
     </section>
 
@@ -91,14 +82,5 @@
       <p>BeTheBowl.com · Sparta Labs · © 2026</p>
     </div>
   </footer>
-
-  <script>
-    document.getElementById('practice-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var status = document.getElementById('form-status');
-      status.hidden = false;
-      status.textContent = 'Email delivery is not connected yet. Nothing was sent.';
-    });
-  </script>
 </body>
 </html>
